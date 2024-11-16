@@ -13,10 +13,10 @@ import './Slidercss.css';
 // import required modules
 import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 
-export default function Slider() {
+function Slider() {
   return (
     <>
-      <Swiper
+       <Swiper
         spaceBetween={30}
         effect={'fade'}
         navigation={true}
@@ -40,5 +40,7 @@ export default function Slider() {
         </SwiperSlide>
       </Swiper>
     </>
-  );
+  )
 }
+
+export default Slider
